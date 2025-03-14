@@ -1,0 +1,99 @@
+[window]
+startup_mode = "Maximized"
+decorations = "Full"
+opacity = 0.9
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[font]
+size = 11.0
+
+[font.normal]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "CaskaydiaCove Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "CaskaydiaCove Nerd Font"
+style = "Italic"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[cursor]
+style.shape = "Block"
+style.blinking = "Always"
+
+[selection]
+save_to_clipboard = true
+
+# [terminal.shell]
+# program = "wsl"
+# args = ["tmux", "-f", "C:\\Users\\tenta\\AppData\\Roaming\\alacritty\\.tmux.conf", "new-session", "-A", "-s", "main"]
+
+# Keybindings
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[colors.primary]
+background = '#2E0854'
+foreground = '#FFFF66'
+
+[colors.cursor]
+text   = '#000b1e'
+cursor = '#0abdc6'
+
+# Normal colors
+[colors.normal]
+black   = '#123e7c'
+red     = '#ff0000'
+green   = '#d300c4'
+yellow  = '#f57800'
+blue    = '#123e7c'
+magenta = '#711c91'
+cyan    = '#0abdc6'
+white   = '#d7d7d5'
+
+# Bright colors
+[colors.bright]
+black   = '#1c61c2'
+red     = '#ff0000'
+green   = '#d300c4'
+yellow  = '#f57800'
+blue    = '#00ff00'
+magenta = '#711c91'
+cyan    = '#0abdc6'
+white   = '#d7d7d5'
