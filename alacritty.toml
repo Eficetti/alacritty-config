@@ -35,7 +35,7 @@ save_to_clipboard = true
 
 # [terminal.shell]
 # program = "wsl"
-# args = ["tmux", "-f", "C:\\Users\\tenta\\AppData\\Roaming\\alacritty\\.tmux.conf", "new-session", "-A", "-s", "main"]
+# args = ["tmux", "-f", "C:\\Users\\{{USER}}\\AppData\\Roaming\\alacritty\\.tmux.conf", "new-session", "-A", "-s", "main"]
 
 # Keybindings
 [[keyboard.bindings]]
