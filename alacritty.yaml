@@ -1,0 +1,155 @@
+window:
+  startup_mode: Maximized
+  decorations: Full
+  opacity: 0.9
+  dimensions:
+    columns: 120
+    lines: 30
+  # Mejoras para Ubuntu
+  gtk_theme_variant: dark
+  padding:
+    x: 10
+    y: 10
+
+font:
+  size: 11.0
+  normal:
+    family: "CaskaydiaCove Nerd Font"
+    style: Regular
+  bold:
+    family: "CaskaydiaCove Nerd Font"
+    style: Bold
+  italic:
+    family: "CaskaydiaCove Nerd Font"
+    style: Italic
+  # Mejoras de renderizado para Ubuntu
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  # Optimización de fuentes
+  builtin_box_drawing: true
+
+# Configuración específica para Ubuntu
+env:
+  # Mejora el rendimiento en Ubuntu
+  WINIT_X11_SCALE_FACTOR: "1.0"
+  # Soporte para Wayland (si usas GNOME)
+  WINIT_UNIX_BACKEND: "x11"
+
+# Optimizaciones de rendimiento
+live_config_reload: true
+persistent_logging: false
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+cursor:
+  style:
+    shape: Block
+    blinking: Always
+  # Mejoras para Ubuntu
+  thickness: 0.15
+  blink_interval: 750
+
+selection:
+  save_to_clipboard: true
+  # Mejora la selección en Ubuntu
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+# Configuración de terminal para Ubuntu
+terminal:
+  # Shell por defecto para Ubuntu
+  shell:
+    program: /bin/bash
+    args:
+      - -l
+  # Mejoras de compatibilidad
+  osc52: true
+
+# Atajos de teclado mejorados para Ubuntu
+keyboard:
+  bindings:
+    # Atajos básicos
+    - { key: V, mods: Control|Shift, action: Paste }
+    - { key: C, mods: Control|Shift, action: Copy }
+    - { key: Insert, mods: Shift, action: PasteSelection }
+    - { key: Plus, mods: Control, action: IncreaseFontSize }
+    - { key: Minus, mods: Control, action: DecreaseFontSize }
+    - { key: Key0, mods: Control, action: ResetFontSize }
+    
+    # Nuevos atajos útiles para Ubuntu
+    - { key: T, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: W, mods: Control|Shift, action: Quit }
+    - { key: R, mods: Control|Shift, action: ClearHistory }
+    - { key: L, mods: Control|Shift, action: ClearLogNotice }
+    - { key: H, mods: Control|Shift, action: Hide }
+    - { key: M, mods: Control|Shift, action: Minimize }
+    - { key: F, mods: Control|Shift, action: ToggleFullscreen }
+    
+    # Navegación mejorada
+    - { key: Up, mods: Alt, chars: "\x1b[1;3A" }
+    - { key: Down, mods: Alt, chars: "\x1b[1;3B" }
+    - { key: Left, mods: Alt, chars: "\x1b[1;3D" }
+    - { key: Right, mods: Alt, chars: "\x1b[1;3C" }
+    
+    # Atajos para desarrollo
+    - { key: Key1, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key2, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key3, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key4, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key5, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key6, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key7, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key8, mods: Control|Shift, action: SpawnNewInstance }
+    - { key: Key9, mods: Control|Shift, action: SpawnNewInstance }
+
+# Esquema de colores mejorado para Ubuntu
+colors:
+  primary:
+    background: '#1a1a1a'
+    foreground: '#f8f8f2'
+  
+  cursor:
+    text: '#000000'
+    cursor: '#f8f8f2'
+  
+  # Colores normales mejorados
+  normal:
+    black: '#000000'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#bd93f9'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#bfbfbf'
+  
+  # Colores brillantes mejorados
+  bright:
+    black: '#4d4d4d'
+    red: '#ff6e67'
+    green: '#5af78e'
+    yellow: '#f4f99d'
+    blue: '#caa9fa'
+    magenta: '#ff92d0'
+    cyan: '#9aedfe'
+    white: '#e6e6e6'
+
+# Configuración de búsqueda
+search:
+  regex: false
+  case_sensitive: false
+  whole_word: false
+
+# Configuración de hints (comentado por compatibilidad)
+# hints:
+#   enabled:
+#     - hyperlinks
+#   alphabet: "jfkdls;ahgurieowpq"
+#   binding:
+#     - { key: E, mods: Control, action: AcceptSelection }
+#     - { key: U, mods: Control, action: AcceptSelection } 
